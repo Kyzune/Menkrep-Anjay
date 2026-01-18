@@ -209,3 +209,99 @@ Caused by: java.nio.file.NoSuchFileException: plugins/spark/tmp-client/spark-114
 	at me.lucko.spark.paper.common.util.TemporaryFiles.create(TemporaryFiles.java:78) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
 	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.start(AsyncProfilerJob.java:137) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
 	... 7 more
+[06:56:53] [spark-async-sampler-worker-thread/WARN]: [spark] Failed to stop previous profiler job
+java.lang.IllegalStateException: Profiler job no longer active!
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.checkActive(AsyncProfilerJob.java:115) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.stop(AsyncProfilerJob.java:186) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncSampler.rotateProfilerJob(AsyncSampler.java:126) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[06:56:53] [spark-async-sampler-worker-thread/WARN]: [spark] Exception occurred while rotating profiler job
+java.lang.RuntimeException: Unable to create temporary output file
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.start(AsyncProfilerJob.java:139) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncSampler.rotateProfilerJob(AsyncSampler.java:135) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.nio.file.NoSuchFileException: plugins/spark/tmp-client/spark-122d0e443f8-profile-data.jfr.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:213) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:244) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:357) ~[?:?]
+	at java.base/java.nio.file.Files.createFile(Files.java:609) ~[?:?]
+	at me.lucko.spark.paper.common.util.TemporaryFiles.create(TemporaryFiles.java:78) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.start(AsyncProfilerJob.java:137) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	... 7 more
+[06:57:53] [spark-async-sampler-worker-thread/WARN]: [spark] Failed to stop previous profiler job
+java.lang.IllegalStateException: Profiler job no longer active!
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.checkActive(AsyncProfilerJob.java:115) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.stop(AsyncProfilerJob.java:186) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncSampler.rotateProfilerJob(AsyncSampler.java:126) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[06:57:53] [spark-async-sampler-worker-thread/WARN]: [spark] Exception occurred while rotating profiler job
+java.lang.RuntimeException: Unable to create temporary output file
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.start(AsyncProfilerJob.java:139) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncSampler.rotateProfilerJob(AsyncSampler.java:135) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.nio.file.NoSuchFileException: plugins/spark/tmp-client/spark-130c92b488b-profile-data.jfr.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:213) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:244) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:357) ~[?:?]
+	at java.base/java.nio.file.Files.createFile(Files.java:609) ~[?:?]
+	at me.lucko.spark.paper.common.util.TemporaryFiles.create(TemporaryFiles.java:78) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.start(AsyncProfilerJob.java:137) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	... 7 more
+[06:58:53] [spark-async-sampler-worker-thread/WARN]: [spark] Failed to stop previous profiler job
+java.lang.IllegalStateException: Profiler job no longer active!
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.checkActive(AsyncProfilerJob.java:115) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.stop(AsyncProfilerJob.java:186) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncSampler.rotateProfilerJob(AsyncSampler.java:126) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[06:58:53] [spark-async-sampler-worker-thread/WARN]: [spark] Exception occurred while rotating profiler job
+java.lang.RuntimeException: Unable to create temporary output file
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.start(AsyncProfilerJob.java:139) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncSampler.rotateProfilerJob(AsyncSampler.java:135) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.nio.file.NoSuchFileException: plugins/spark/tmp-client/spark-13ec17384cc-profile-data.jfr.tmp
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:213) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:244) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:357) ~[?:?]
+	at java.base/java.nio.file.Files.createFile(Files.java:609) ~[?:?]
+	at me.lucko.spark.paper.common.util.TemporaryFiles.create(TemporaryFiles.java:78) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	at me.lucko.spark.paper.common.sampler.async.AsyncProfilerJob.start(AsyncProfilerJob.java:137) ~[spark-paper-1.10.119-SNAPSHOT.jar:?]
+	... 7 more

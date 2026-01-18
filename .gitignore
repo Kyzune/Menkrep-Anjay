@@ -1,6 +1,19 @@
+# Logs
 logs/
+*.log
+
+# Minecraft runtime files
 .console_history
 usercache.json
+banned-players.json
+banned-ips.json
+ops.json
+whitelist.json
+
+# Worlds (VERY LARGE)
 world/
 world_nether/
 world_the_end/
+
+# Crash reports
+crash-reports/
